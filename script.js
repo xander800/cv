@@ -1,6 +1,23 @@
 (function () {
   "use strict";
 
+  /* Case studies: expanded by default on desktop, collapsed (except the
+     first) on narrow/mobile widths so the page doesn't read as one long
+     wall of always-open text. */
+  var storyEls = document.querySelectorAll(".story");
+  function setStoryDefaults() {
+    var isMobile = window.matchMedia("(max-width: 640px)").matches;
+    storyEls.forEach(function (el, i) {
+      if (el.dataset.userToggled) return; // don't override a manual click
+      el.open = isMobile ? i === 0 : true;
+    });
+  }
+  setStoryDefaults();
+  window.addEventListener("resize", setStoryDefaults);
+  storyEls.forEach(function (el) {
+    el.addEventListener("toggle", function () { el.dataset.userToggled = "1"; });
+  });
+
   /* Theme toggle */
   var root = document.documentElement;
   var themeBtn = document.getElementById("themeToggle");
