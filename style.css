@@ -1,0 +1,33 @@
+/* style.css — professional resume styling, presentation only */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0f172a;
+  --primary:#0b5fff;
+  --max-width:980px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:var(--accent);}
+.container{max-width:var(--max-width);margin:28px auto;padding:28px;background:var(--card);box-shadow:0 6px 18px rgba(11,15,35,0.06);border-radius:10px}
+.header{display:flex;gap:24px;align-items:center;border-bottom:1px solid #e6e9ef;padding-bottom:18px;margin-bottom:18px}
+.profile-img{width:140px;height:140px;object-fit:cover;border-radius:10px;box-shadow:0 6px 18px rgba(11,15,35,0.08)}
+.name{margin:0;font-size:1.6rem;letter-spacing:0.2px}
+.title{margin:6px 0;color:var(--muted);font-weight:600}
+.contact{margin:6px 0;color:var(--muted);font-size:0.95rem}
+.contact a{color:var(--primary);text-decoration:none}
+.status{margin:6px 0;color:var(--muted);font-size:0.9rem}
+section{margin:18px 0}
+h2{margin:0 0 12px 0;font-size:1.05rem;border-bottom:2px solid #eef2ff;padding-bottom:8px;color:var(--accent)}
+ul{margin:8px 0 0 18px}
+.experience{margin-bottom:12px}
+.experience h3{margin:0;font-size:0.98rem}
+.date{font-size:0.9rem;color:var(--muted);margin:6px 0}
+footer.footer{text-align:center;margin-top:22px;color:var(--muted);font-size:0.95rem}
+footer.footer a{color:var(--primary);text-decoration:none}
+/* Responsive */
+@media (max-width:720px){
+  .header{flex-direction:column;align-items:flex-start}
+  .profile-img{width:120px;height:120px}
+  .container{padding:18px}
+}

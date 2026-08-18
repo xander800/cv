@@ -2,31 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>Email Address: <strong><a href="https://accounts.google.com/signin/v2"target="_blank">yashu291996@live.com</a></strong></p>
-    <dl class="">
-       <dt>Contact Numbers</dt>
-       <dd>
-         <ul>
-           <li>Contact#1 : +91-7989612425</li>
-           <li>Contact#1 : +91-9944434282</li>
-         </ul>
-      </dd>
-    </dl>
+    <main class="container">
+      <h2>Contact</h2>
+      <p>Email Address: <strong><a href="mailto:yashu291996@live.com">yashu291996@live.com</a></strong></p>
+      <dl>
+         <dt>Contact Numbers</dt>
+         <dd>
+           <ul>
+             <li>Contact#1 : +91-7989612425</li>
+             <li>Contact#2 : +91-9944434282</li>
+           </ul>
+        </dd>
+      </dl>
 
-    <hr>
+      <hr>
 
-    <form class="" action="index.html" method="post">
-      <label for="Name">Enter your Name:</label>
-      <input type="text" name="Name" value="">
-      <input type="button" name="" value="Submit">
-<br>
-      <label for="">Enter your Email-Address</label>
-      <input type="email" name="Email Address" value="">
-      <input type="button" name="" value="Submit">
-
-    </form>
+      <form action="#" method="post" aria-label="Contact form (static)">
+        <label for="name">Enter your Name:</label><br>
+        <input id="name" type="text" name="Name" value="" placeholder="Your name"><br><br>
+        <label for="email">Enter your Email-Address</label><br>
+        <input id="email" type="email" name="Email Address" value="" placeholder="you@example.com"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
   </body>
 </html>
