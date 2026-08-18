@@ -109,8 +109,14 @@
         <p>The employment history behind the résumé, told as engineering problems.</p>
       </div>
 
-      <article class="story reveal">
-        <div class="story-head"><h3>Modernising a 100-billion-record enterprise warehouse</h3><span class="story-date mono">AT&amp;T · May 2024 – Jul 2026</span></div>
+      <details class="story reveal" open>
+        <summary class="story-head">
+          <div>
+            <h3>Modernising a 100-billion-record enterprise warehouse</h3>
+            <span class="story-teaser">Query execution cut from ~60 min to 2–3 min · 30% less manual migration effort</span>
+          </div>
+          <span class="story-date mono">AT&amp;T · May 2024 – Jul 2026</span>
+        </summary>
         <div class="story-body">
           <div class="story-col"><h4>Problem</h4><p>50+ enterprise applications running on Vertica, Oracle/GoldenGate and Mainframe needed to move to Snowflake without breaking downstream business logic or production stability.</p></div>
           <div class="story-col"><h4>Scale</h4><p>~100 billion historical records. 50+ IBM DataStage procedures modernised into Azure Databricks notebooks.</p></div>
@@ -119,10 +125,16 @@
             <div class="story-stack"><span class="tag">Snowflake</span><span class="tag">PySpark</span><span class="tag">Databricks</span><span class="tag">GoldenGate</span></div>
           </div>
         </div>
-      </article>
+      </details>
 
-      <article class="story reveal">
-        <div class="story-head"><h3>Migrating financial reporting off Teradata/Informatica</h3><span class="story-date mono">Impetus Technologies · Oct 2022 – May 2024</span></div>
+      <details class="story reveal">
+        <summary class="story-head">
+          <div>
+            <h3>Migrating financial reporting off Teradata/Informatica</h3>
+            <span class="story-teaser">1,000+ scripts automated · debugging time cut from ~1 hour to 10 minutes</span>
+          </div>
+          <span class="story-date mono">Impetus Technologies · Oct 2022 – May 2024</span>
+        </summary>
         <div class="story-body">
           <div class="story-col"><h4>Problem</h4><p>20 financial reporting workloads on Teradata/Informatica needed migration planning and conversion to Snowflake, with 1,000+ BTEQ scripts to translate accurately.</p></div>
           <div class="story-col"><h4>Scale</h4><p>500M+ AP/AR records requiring migration-accuracy validation. 1,000+ BTEQ scripts.</p></div>
@@ -131,10 +143,16 @@
             <div class="story-stack"><span class="tag">Teradata</span><span class="tag">Snowflake</span><span class="tag">Qlik Replicate</span><span class="tag">SnowSQL</span></div>
           </div>
         </div>
-      </article>
+      </details>
 
-      <article class="story reveal">
-        <div class="story-head"><h3>Trade finance application support &amp; automation</h3><span class="story-date mono">Infosys · Jan 2020 – Sep 2022</span></div>
+      <details class="story reveal">
+        <summary class="story-head">
+          <div>
+            <h3>Trade finance application support &amp; automation</h3>
+            <span class="story-teaser">98% faster asset transfer · 99% fewer late escalations</span>
+          </div>
+          <span class="story-date mono">Infosys · Jan 2020 – Sep 2022</span>
+        </summary>
         <div class="story-body">
           <div class="story-col"><h4>Problem</h4><p>Six enterprise banking applications supporting trade finance reporting and operational processing needed performance improvements and reliable file transmission.</p></div>
           <div class="story-col"><h4>Scale</h4><p>500,000+ records in asset transfer process. NDM transmissions automated for 15 clients.</p></div>
@@ -143,7 +161,7 @@
             <div class="story-stack"><span class="tag">Salt Stack</span><span class="tag">Jinja</span><span class="tag">JIRA/Scrum</span></div>
           </div>
         </div>
-      </article>
+      </details>
     </div>
   </section>
 
